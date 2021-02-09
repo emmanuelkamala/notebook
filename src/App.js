@@ -1,7 +1,9 @@
+import CreateNote from './components/CreateNote';
+
 function App() {
   return (
-    <div>
-      <h1>Hi Angelina S. Nyamwihula</h1>
+    <div className="container mt-3 p-3">
+      <CreateNote />
     </div>
   );
 }
