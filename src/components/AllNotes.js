@@ -5,9 +5,11 @@ function AllNotes({notes, toggle_note}) {
   return (
     <div className="my-3">
       <h3>All Notes</h3>
-      {
-        notes.map(note => <Note key={note.id} note={note} toggle_note={toggle_note} />)
-      }
+      <div className="row">
+        {
+          notes.map(note => <Note key={note.id} note={note} toggle_note={toggle_note} />)
+        }
+      </div>
     </div>
   )
 }
