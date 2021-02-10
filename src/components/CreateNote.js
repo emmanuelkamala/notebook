@@ -4,9 +4,20 @@ const CreateNote = () => {
 
   const [note, setNote] = useState('');
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = {
+      note,
+      id: Math.floor(Math.random() * 1000),
+      date: new Date().toJSON().slice(0, 10),
+      isImportant: false
+    }
+    console.log(data);
+  }
+
   return (
     <div>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           <textarea 
             cols="3" 
@@ -15,7 +26,10 @@ const CreateNote = () => {
             value={note} 
             onChange={e =>setNote(e.target.value)} 
           />
-          <button className="btn btn-success mt-3" type="submit">Add Note</button>
+          <button 
+            className="btn btn-success mt-3" 
+            type="submit" 
+          >Add Note</button>
         </div>
       </form>
     </div>
