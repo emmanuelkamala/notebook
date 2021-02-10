@@ -3,8 +3,8 @@
 }
 
 body {
-  background-color: #373637;
-  color: #FF4C0D;
+  background-color: #cccacc;
+  color: #fffcfb;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -25,9 +25,14 @@ hr {
 
 .card {
   background: transparent !important;
+  background-color: rgb(86, 87, 88) !important;
   box-shadow: 5px 5px 8px #1e1d1e,
       -5px -5px 8px #484748;
   width: 15rem;
+}
+
+.card-body {
+  background-color: rgb(114, 115, 119) !important;
 }
 
 .btn {
@@ -39,8 +44,8 @@ hr {
 }
 
 .btn:hover {
-  background: #FF4C0D;
+  background: #048f32;
   color: #fff;
-  border: 1px solid #FF4C0D;
+  border: 1px solid #048f32;
   outline: none;
 }
